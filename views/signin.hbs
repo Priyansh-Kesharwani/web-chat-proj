@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/signin.css">
+    <title>Kindle. Sign In</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/signin">
+        <h1>Vartalap</h1>
+      </a>
+    </header>
+    <div class="main">
+      <div class="left">
+        <h1>
+          Prepare to Connect <br />
+          Like Never<br />
+          Before!
+        </h1>
+      </div>
+      <form class="right" method="POST" action="https://web-chat-project2.herokuapp.com/routes/users/signin">
+        <h1>Login</h1>
+        <p>Welcome back! Please login to your <br />account.</p>
+        <div class="inputs">
+          
+          <div class="input">
+            <p>Email</p>
+            <input type="text"  name="email"/>
+          </div>
+          <div class="input">
+            <p>Password</p>
+            <input type="password" name="password"/>
+          </div>
+        </div>
+        <button>Login</button>
+        <h5>
+          New User? <a href="/signup"><span>Sign Up</span></a>
+        </h5>
+
+        <p id="valid">{{error}}</p>
+      </div>
+    </div>
+    <script src="./javascript/signin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    {{!-- <link rel="icon" href="./assets/favicon.png" /> --}}
+    <link rel="stylesheet" href="./stylesheets/home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.getElementById('nodisplay').style.display="none"
+    </script>
+  </head>
+  <body>
+    <h2 class="title">Vartalap</h2>
+    <div class="main">
+      <div class="main-left">
+        <div class="main-left-content">
+          <p>Welcome {{username}},</p>
+          <h3>Enter the Room name and connect Now!</h3>
+          <form action="/chat" class="form">
+            <input type="text" name="username" value="{{username}}" id="nodisplay">
+            <!-- <label>Display name</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Display name"
+            required
+          />
+          <label>Room</label> -->
+            <input
+              type="text"
+              name="room"
+              placeholder="Room name..."
+              required
+            />
+            <button>Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="main-right">
+        <img src="./assets/home-pattern@2x.png" class="pattern" />
+        <img src="./assets/landing-photo@2x.png" class="right-img" />
+      </div>
+
+      
+    </div>
+  </body>
+</html>
